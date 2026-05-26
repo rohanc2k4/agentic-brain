@@ -18,7 +18,7 @@ The first version was small. A folder of pages for parallel computing exam prep.
 
 Andrej Karpathy tweeted around that time about using Obsidian and Claude Code together as an LLM-native wiki stack of `.md` files. That confirmed the direction.
 
-Within a week the wiki had outgrown studying. I had pages for the people at work, the org I worked at, and the projects I was leading at the internship. I added a `priorities.md` to track what was active, a `decisions/log.md` to capture choices with reasoning, and a `daily/` folder for daily notes. The wiki was now a second brain.
+Within a week the wiki had grown beyond exam prep. It now held the projects I was leading, the study material I kept ingesting for new classes, and the open-source projects I was building on the side, including [Sanji](https://sanji.dev), a localhost replacement for NotebookLM. I added a `priorities.md` to track what was active, a `decisions/log.md` to capture choices with reasoning, and a `daily/` folder for daily notes. The wiki was now a second brain.
 
 Within a month it was running my life. I added a `morning-coffee` skill that read my Google Calendar, ran a two-pass planning dialog with me, and packed the day. I added `close-week` and `close-month` skills that rolled up tagged inline captures from daily notes into weekly and monthly summaries. I added a `drift` skill that compared what I said I was working on in `priorities.md` against what my git history and calendar actually showed me doing. The system stopped being something I used. It was a rhythm I lived inside.
 
