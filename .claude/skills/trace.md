@@ -39,7 +39,7 @@ Two resolution paths:
 - **Slug resolution.** If the topic matches one or more files by filename (stem or folder), use those files as the primary trace target.
 - **Keyword resolution.** If no filename matches, use grep across the repo to find pages mentioning the topic. Take the top 10 by match density.
 
-Print the resolved targets: `Tracing 'offer one vs offer two' across 4 files: decisions/log.md, context/people/me.md, daily/2026-04-16.md, daily/2026-04-17.md.`
+Print the resolved targets: `Tracing 'offer one vs offer two' across 4 files: decisions/log.md, context/orgs/employer/index.md, daily/2026-04-16.md, daily/2026-04-17.md.`
 
 ### Phase 2: Collect git history for target files
 

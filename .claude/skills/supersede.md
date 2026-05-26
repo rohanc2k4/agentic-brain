@@ -69,7 +69,7 @@ For repo files, compute:
 archivePath = "archives/" + <old-path-relative-to-repo-root without .md> + "-" + today + ".md"
 ```
 
-Example: `context/people/alex.md` on 2026-04-14 → `archives/context/people/alex-2026-04-14.md`.
+Example: `context/orgs/some-org/index.md` on 2026-04-14 → `archives/context/orgs/some-org/index-2026-04-14.md`.
 
 Check if `archivePath` already exists. If it does, try `...-<today>-2.md`, `...-<today>-3.md`, and so on until you find an unused path. Use that as the final `archivePath`.
 
@@ -124,7 +124,7 @@ Print a preview block, then wait for approval. The preview has five sections:
 
 | File | Hits |
 |---|---|
-| context/people/alex.md | 3 |
+| context/orgs/some-org/index.md | 3 |
 | projects/work/some-project/README.md | 1 |
 | ... | ... |
 

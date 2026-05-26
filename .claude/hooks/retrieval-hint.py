@@ -4,7 +4,7 @@
 Reads the hook JSON on stdin, matches the prompt against:
 - filename stems under context/, projects/, references/
 - folder names containing README.md or index.md
-- title: frontmatter values in context/people/*.md and context/orgs/*/index.md
+- title: frontmatter values in context/orgs/*/index.md and context/orgs/*.md
 
 Emits additionalContext listing up to 5 matching paths. Silent on zero hits.
 """
