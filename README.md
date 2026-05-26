@@ -1,6 +1,6 @@
-# executive-assistant
+# Agentic Brain
 
-A file-based executive assistant / second brain for [Claude Code](https://claude.com/claude-code).
+A file-based second brain for [Claude Code](https://claude.com/claude-code).
 
 Markdown notes. Opinionated skills. Hooks that nudge good habits. A wikilink-driven knowledge graph that grows as you use it. Obsidian-compatible so you can browse with a UI when you want, but the source of truth is plain markdown.
 
@@ -38,8 +38,8 @@ CLAUDE.md          the system prompt Claude Code sees each session
 ## Quick start
 
 ```bash
-git clone https://github.com/rohanc2k4/executive-assistant.git
-cd executive-assistant
+git clone https://github.com/rohanc2k4/agentic-brain.git
+cd agentic-brain
 # Open in Claude Code
 ```
 
