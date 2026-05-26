@@ -46,7 +46,7 @@ README.md             this file
 What's NOT in here, because it's yours to create:
 
 ```
-context/              your canonical knowledge: people, orgs, priorities, goals
+context/              your canonical knowledge: orgs, priorities, goals
 projects/             one folder per active workstream
 decisions/log.md      decisions with reasoning (curated)
 daily/                one daily note per day
@@ -105,7 +105,7 @@ When a skill IS worth building, the flow is: brainstorm → spec → plan → im
 ```yaml
 ---
 title: Entity Name
-type: person | organization | project | rule | rhythm-file | reference
+type: organization | project | rule | rhythm-file | reference
 last_updated: YYYY-MM-DD
 sources: [list of sources]
 ---
@@ -333,7 +333,7 @@ Open the repo in Claude Code. Then:
 
 1. Read `CLAUDE.md` end to end. It's the system prompt for your sessions, and you'll edit it as you make the framework yours.
 2. Edit `.claude/rules/communication-style.md` to your tone preferences.
-3. Create `context/` and fill in your people, orgs, priorities, and goals.
+3. Create `context/` and fill in your orgs, priorities, and goals.
 4. Create `projects/` and write one README per active workstream with the project frontmatter.
 5. Run `/morning-coffee` to start the daily rhythm.
 6. Let the skills compound. Most of them stay quiet until they're useful.

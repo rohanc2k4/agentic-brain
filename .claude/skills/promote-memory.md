@@ -68,7 +68,7 @@ If the resulting list is empty, print `no memory entries ready to promote, nothi
 For each candidate, produce a destination proposal using your own judgment (not a keyword match). The proposal is one of:
 
 - `update <relative-path>` — an existing file in `context/`, `projects/`, or `references/` is the likely destination.
-- `new <proposed-relative-path>` — no existing home; suggest a path following the repo's conventions (`context/people/*.md` for people, `context/orgs/<slug>/*.md` for org concepts, `projects/work/<slug>/README.md` for work projects, `references/sops/*.md` for SOPs, etc.).
+- `new <proposed-relative-path>` — no existing home; suggest a path following the repo's conventions (`context/orgs/<slug>/*.md` for org concepts, `projects/work/<slug>/README.md` for work projects, `references/sops/*.md` for SOPs, etc.).
 - `unclear` — no confident placement.
 
 To make each proposal, consider:
@@ -88,7 +88,7 @@ Print a markdown table (with index, age, type, name truncated to ~35 chars, and 
 Candidates (<N>):
 
   #  age   type       name                                 destination (proposed)
-  1  12d   user       Role at current employer             update context/people/me.md
+  1  12d   user       Role at current employer             update context/orgs/employer/index.md
   2  12d   feedback   Negotiation style                    update .claude/rules/communication-style.md
   3   8d   project    Active side projects                 [parked] new projects/work/some-cleanup/README.md
   4   5d   reference  Observability stack                  new context/orgs/some-org/observability.md
@@ -123,7 +123,7 @@ Draft the new file content:
 
 - **Frontmatter:** keep a subset of fields — map the memory frontmatter to the canonical context shape:
   - `title`: the memory's `name` field
-  - `type`: pick one of `person` / `organization` / `project` / `rule` / `rhythm-file` / `reference` based on the candidate's content. If unclear, use the memory's original `type` field.
+  - `type`: pick one of `organization` / `project` / `rule` / `rhythm-file` / `reference` based on the candidate's content. If unclear, use the memory's original `type` field.
   - `last_updated`: `<today>`
   - `sources: [memory/<basename>.md]`
 

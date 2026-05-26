@@ -6,7 +6,7 @@ This file is the system prompt Claude Code sees on every session. Edit it to fit
 
 ## What this is
 
-A folder of markdown that holds your context (people, orgs, priorities, goals), your projects, your decisions, and your daily rhythm. A set of skills under `.claude/skills/` that automate the rituals you actually do (morning planning, weekly rollups, drift detection between stated priorities and actual behavior). A few hooks that prevent the system from rotting (log nudges, secret scans, retrieval hints).
+A folder of markdown that holds your context (orgs, priorities, goals), your projects, your decisions, and your daily rhythm. A set of skills under `.claude/skills/` that automate the rituals you actually do (morning planning, weekly rollups, drift detection between stated priorities and actual behavior). A few hooks that prevent the system from rotting (log nudges, secret scans, retrieval hints).
 
 Obsidian-compatible so you can browse with a UI when you want, but the source of truth is plain markdown.
 
@@ -14,7 +14,6 @@ Obsidian-compatible so you can browse with a UI when you want, but the source of
 
 ```
 context/         canonical, long-lived knowledge — entities and rhythm files
-  people/        one file per person
   orgs/          one folder or file per organization
   priorities.md  this week's dashboard
   goals.md       quarterly goals
@@ -59,7 +58,7 @@ Every content page starts with YAML frontmatter:
 ```yaml
 ---
 title: Entity Name
-type: person | organization | project | rule | rhythm-file | reference
+type: organization | project | rule | rhythm-file | reference
 last_updated: YYYY-MM-DD
 sources: [list of sources]
 ---
@@ -116,7 +115,7 @@ Add your own as preferences harden. Rules are binding for anything the user touc
 1. Clone this repo. Rename it to anything.
 2. Open in Claude Code (the project root becomes `$CLAUDE_PROJECT_DIR`).
 3. Read this file. Edit the file layout, skill list, and rules to match how you work.
-4. Fill `context/people/`, `context/orgs/`, `context/priorities.md`, `context/goals.md` with your own.
+4. Fill `context/orgs/`, `context/priorities.md`, `context/goals.md` with your own.
 5. Run `/morning-coffee` to start the daily rhythm.
 
 ## Skill discipline

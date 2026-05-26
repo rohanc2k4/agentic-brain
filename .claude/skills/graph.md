@@ -51,7 +51,7 @@ Or via `/graph <subcommand> [args]`.
 ## When to invoke
 
 - Scoping a change: "what links to `[[some-page]]`?" before renaming or superseding.
-- Trust calibration: "confidence of `context/people/me.md`?" to decide whether a claim there is load-bearing.
+- Trust calibration: "confidence of `context/orgs/<org>/index.md`?" to decide whether a claim there is load-bearing.
 - Orphan triage: "what pages are low-confidence AND have no inbound links?" to find dead content.
 - Dependency checks: before touching a high-inbound node, glance at `around <name>` to understand blast radius.
 
