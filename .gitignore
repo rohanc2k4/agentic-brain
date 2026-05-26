@@ -1,0 +1,23 @@
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+
+# Local-only Claude Code config (per-user settings, paths, kill commands)
+.claude/settings.local.json
+
+# Per-user runtime artifacts that shouldn't be committed
+log.md
+CLAUDE.local.md
+.superpowers/
+
+# Generated outputs and personal content directories (untracked by default;
+# users opt-in by creating these themselves)
+outputs/
+daily/
+weekly/
+monthly/
+archives/
+decisions/
+context/
+projects/

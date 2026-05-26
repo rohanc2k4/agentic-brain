@@ -1,0 +1,14 @@
+# Discord scrape source registry.
+# Fill in with real server/channel IDs; see references/sops/discord-scrape-setup.md.
+#
+# Schema:
+#   sources:
+#     <source-name>:
+#       server_id: "<discord server snowflake id>"
+#       server_name: "Human-readable name"
+#       channels:
+#         - id: "<channel snowflake id>"
+#           name: "channel_name"
+#       default_window_days: 60   # how many days of scrollback to fetch by default
+
+sources: {}
